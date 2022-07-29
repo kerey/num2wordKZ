@@ -32,9 +32,9 @@
     "mocha": "^8.2.1",
     "sinon": "^7.3.2"
   },
-  "homepage": "",
+  "homepage": "https://github.com/kerey/num2wordKZ",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/kerey/num2wordKZ"
   }
 }
