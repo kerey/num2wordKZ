@@ -1,6 +1,6 @@
 {
-  "name": "@kerey/num2wordKZ",
-  "version": "1.0.4",
+  "name": "@kerey/num2wordkz",
+  "version": "1.0.5",
   "description": "Convert number to word in kazakh",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
