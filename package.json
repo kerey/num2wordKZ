@@ -1,14 +1,14 @@
 {
-  "name": "base-npm-lib",
-  "version": "1.0.29",
-  "description": "Base repo for building npm modules",
+  "name": "@kerey/num2wordKZ",
+  "version": "1.0.1",
+  "description": "Convert number to word in kazakh",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "watch": "watch 'npm run build' ./src",
     "test": "npm run build && ./node_modules/mocha/bin/mocha",
-    "deploy": "npm version patch --force && npm run build && npm publish"
+    "deploy": "npm version patch --force && npm run build && npm publish --access=public"
   },
   "keywords": [
     "npm",
@@ -20,21 +20,21 @@
   "author": "Sahil Khosla",
   "license": "ISC",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-loader": "^8.0.6",
-    "webpack": "^4.36.1",
-    "webpack-cli": "^3.3.6",
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
-    "watch": "^1.0.2"
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.6",
+    "watch": "^1.0.2",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "mocha": "^8.2.1",
     "sinon": "^7.3.2"
   },
-  "homepage": "https://github.com/sahilkhosla/base-npm-lib",
+  "homepage": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sahilkhosla/base-npm-lib.git"
+    "url": ""
   }
 }
