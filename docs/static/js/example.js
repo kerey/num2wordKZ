@@ -1,4 +1,4 @@
-import {num2word} from "./index";
+import {num2word} from "../../../src";
 
 const btn = document.getElementById('btn');
 const input = document.getElementById('input');
