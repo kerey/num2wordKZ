@@ -1,44 +1,21 @@
-# base-npm-lib
+# Convert numbers to words in Kazakh
 
-Shell for developing npm packages, wired with Webpack and Babel to allow ES6 and import/export modules
+The first library to convert numbers to words in Kazakh language
 
-## How to use `base-npm-lib` to build a package?
-
-### 1. Clone
-
-* Clone this repo
-* Create a github repo with the name for your package and add the newly created repo as the origin remote
-* Update the details in `package.json` file (name, description, github url and versoin).
-
-### 2. Test
-
-* `npm run test` to test
-
-### 3. Build
-
-* `npm run build` to build the package
-
-### 4. Publish
-
-* `npm login` (first time only)
-* `npm publish`
-
----
-
-## Import published package in another app
+## How to use `num2wordKZ`?
 
 ### 1. Install
 
-`npm install base-npm-lib` to install the latest version from `npm` 
+* `npm install @kerey/num2wordkz`
 
-### 2. Use
+### 2. Simply use 
 
 ```javascript
-import { sayHello, greet } from 'base-npm-lib'
-
+import { num2word } from '@kerey/num2wordKZ';
 ...
-
-sayHello('name'); // hello name
-greet(); // hello world!!
+const word = num2word(12);
+console.log(word); // он екі
 
 ```
+
+---
