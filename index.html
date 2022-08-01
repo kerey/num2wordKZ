@@ -8,10 +8,27 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <meta charset="UTF-8"/>
+    <style>
+        .container {
+            padding-top: 42px;
+            margin: 0 auto;
+            max-width: 720px;
+        }
+        h2 {
+            margin: 0;
+        }
+        .input {
+            width: 100%;
+            height: 36px;
+            padding: 0 12px;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <input type="text" placeholder="Сан енгізіңіз" id="input"/>
+    <div class="container">
+        <h2>Сандарды Қазақ тілінде сөзге айналдыру</h2>
+        <p>Бұл демо <a href="https://github.com/kerey/num2wordKZ" target="_blank">@kerey/num2wordKZ</a> библиотекасына арналған</p>
+        <input class="input" type="text" placeholder="Сан енгізіңіз" id="input"/>
         <p type="text" id="text">
         </p>
     </div>
