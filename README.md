@@ -11,9 +11,9 @@ The first library to convert numbers to words in Kazakh language
 ### 2. Simply use 
 
 ```javascript
-import { num2word } from '@kerey/num2wordKZ';
+import { num2wordKZ } from '@kerey/num2wordKZ';
 ...
-const word = num2word(12);
+const word = num2wordKZ(12);
 console.log(word); // он екі
 
 ```

@@ -1,21 +1,22 @@
-exports.num2wordKZ = (num) => {
+exports.num2wordEN = (num) => {
     num = String(Number(num));
-    const first = [null, 'бір', 'екі', 'үш', 'төрт', 'бес', 'алты', 'жеті', 'сегіз', 'тоғыз'];
+    const first = [null, 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'];
     const second = [
         null,
-        'он',
-        'жиырма',
-        'отыз',
-        'қырық',
-        'елу',
-        'алпыс',
-        'жетпіс',
-        'сексен',
-        'тоқсан',
+        'Ten',
+        'Twenty',
+        'Thirty',
+        'Forty',
+        'Fifty',
+        'Sixty',
+        'Seventy',
+        'Eighty',
+        'Ninty',
     ];
-    const third = ['', 'мың', 'миллион', 'миллиард', 'триллион', 'квадриллион', 'квинтиллион'];
+    const third = ['', 'Thousand', 'Million', 'Billion', 'Trillion' ];
+    const tens = [null, 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen'];
     if (num === '0') {
-        return 'нөл';
+        return 'zero';
     }
     const str = (['', '00', '0'][num.length % 3] + num)
         .split('')
@@ -34,11 +35,16 @@ exports.num2wordKZ = (num) => {
             word.push(second[substr[1]]);
         }
         if (first[substr[2]]) {
-            word.push('жүз');
+            word.push('Hundred');
         }
         if (first[substr[2]]) {
             word.push(first[substr[2]]);
         }
     }
-    return word.reverse().join(' ').trim();
+    let ans = word.reverse().join(' ');
+
+    first.forEach((f, i) => {
+        ans = ans.replace(second[1] + ' ' + f, tens[i]);
+    })
+    return ans;
 }
