@@ -3,5 +3,5 @@ import {num2wordKZ} from "./num2wordKZ";
 
 export {
     num2wordEN,
-    num2wordKZ
+    num2wordKZ as num2word
 }
