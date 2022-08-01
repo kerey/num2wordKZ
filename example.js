@@ -1,4 +1,4 @@
-import {num2wordKZ} from "../../../src/num2wordKZ.js";
+import {num2wordKZ} from "./src/num2wordKZ.js";
 
 const input = document.getElementById('input');
 const strInput = document.getElementById('text');
