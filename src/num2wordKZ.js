@@ -1,4 +1,4 @@
-export default function num2word(num) {
+export function num2word(num) {
     num = String(Number(num));
     const first = [null, 'бір', 'екі', 'үш', 'төрт', 'бес', 'алты', 'жеті', 'сегіз', 'тоғыз'];
     const second = [
@@ -40,5 +40,5 @@ export default function num2word(num) {
             word.push(first[substr[2]]);
         }
     }
-    return word.reverse().join(' ');
+    return word.reverse().join(' ').trim();
 }
