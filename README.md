@@ -1,6 +1,8 @@
 # Convert numbers to words in Kazakh
 
-The first library to convert numbers to words in Kazakh language
+The first library to convert numbers to words in Kazakh language.
+
+Live [demo](https://kerey.github.io/num2wordKZ/)
 
 ## How to use `num2wordKZ`?
 
