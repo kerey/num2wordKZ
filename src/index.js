@@ -1,4 +1,7 @@
-exports.num2wordKZ = require('./num2wordKZ.js').num2wordKZ;
-exports.num2wordEN = require('./num2wordEN.js').num2wordEN;
-exports.ilik = require('./septik').ilik;
+import {num2wordEN} from "./num2wordEN";
+import {num2wordKZ} from "./num2wordKZ";
 
+export {
+    num2wordEN,
+    num2wordKZ
+}

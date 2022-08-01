@@ -1,4 +1,4 @@
-exports.num2wordKZ = (num) => {
+export const num2wordKZ = (num) => {
     num = String(Number(num));
     const first = [null, 'бір', 'екі', 'үш', 'төрт', 'бес', 'алты', 'жеті', 'сегіз', 'тоғыз'];
     const second = [

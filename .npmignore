@@ -3,4 +3,4 @@
 node_modules
 src
 test
-webpack.config.js
+webpack.config.babel.js

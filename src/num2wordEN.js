@@ -1,4 +1,4 @@
-exports.num2wordEN = (num) => {
+export const num2wordEN = (num) => {
     num = String(Number(num));
     const first = [null, 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'];
     const second = [
