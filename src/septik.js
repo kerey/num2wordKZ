@@ -1,4 +1,4 @@
-import {num2wordKZ} from './num2wordKZ.js';
+import {num2wordKZ} from './num2word.js';
 
 export const ilik = (str) => {
     const zhalgaular = ['ның', 'нің', 'дың', 'дің', 'тың', 'тің'];
