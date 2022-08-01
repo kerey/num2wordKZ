@@ -1,10 +1,9 @@
 {
   "name": "@kerey/num2wordkz",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "Convert number to word in kazakh",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
-  "type": "module",
   "scripts": {
     "build": "webpack --config webpack.config.babel.js",
     "watch": "watch 'npm run build' ./src",
