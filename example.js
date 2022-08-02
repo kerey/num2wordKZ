@@ -7,7 +7,7 @@ const strInput = document.getElementById('text');
 const ATAU = document.getElementById('atau');
 const ILIK = document.getElementById('ilik');
 
-input.addEventListener('keyup', function(event) {
+input.addEventListener('keypress', function(event) {
     const str = event.target.value;
     const word = num2word(str);
     strInput.innerText = word;
