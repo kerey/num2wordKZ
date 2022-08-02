@@ -14,13 +14,23 @@
             margin: 0 auto;
             max-width: 720px;
         }
-        h2 {
-            margin: 0;
-        }
         .input {
             width: 100%;
             height: 36px;
             padding: 0 12px;
+            border-radius: 4px;
+            border: 1px solid #96D4D4;
+            outline-color: #96D4D4;
+        }
+        .septik {
+            width: 100%;
+        }
+        .septik td {
+            padding: 8px;
+        }
+        .septik, .septik th, .septik td {
+            border: 1px solid #96D4D4;
+            border-collapse: collapse;
         }
     </style>
 </head>
@@ -31,7 +41,56 @@
         <input class="input" type="text" placeholder="Сан енгізіңіз" id="input"/>
         <p type="text" id="text">
         </p>
+        <h2>Септік жалғаулары</h2>
+        <table class="septik">
+            <thead>
+                <tr>
+                    <th>Септік</th>
+                    <th>Жалғау</th>
+                    <th width="200px">Мысал</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Атау</td>
+                    <td>-</td>
+                    <td id="atau"></td>
+                </tr>
+                <tr>
+                    <td>Ілік</td>
+                    <td>-ның/-нің, -дың/-дің, -тың/-тің</td>
+                    <td id="ilik"></td>
+                </tr>
+                <tr>
+                    <td>Барыс</td>
+                    <td>-ға/-ге, -қа/-ке, -на/-не, -а/-е</td>
+                    <td id="barys"></td>
+                </tr>
+                <tr>
+                    <td>Табыс</td>
+                    <td>-ды/-ді, -ты/-ті, -ны/-ні, -н</td>
+                    <td id="tabys"></td>
+                </tr>
+                <tr>
+                    <td>Жатыс</td>
+                    <td>-а/-де, -та/-те, -нда/-нде</td>
+                    <td id="zhatys"></td>
+                </tr>
+                <tr>
+                    <td>Шығыс</td>
+                    <td>-нан/-нен, -дан/-ден, -тан/-тен</td>
+                    <td id="shygys"></td>
+                </tr>
+                <tr>
+                    <td>Көмектес</td>
+                    <td>-мен, -бен, -пен</td>
+                    <td id="komektes"></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
+<!--<script defer="defer" src="./dist/index.js" type="module"></script>-->
 <script defer="defer" src="/num2wordKZ/example.js" type="module"></script>
+<!--<script defer="defer" src="./example.js" type="module"></script>-->
 </html>
