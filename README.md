@@ -13,9 +13,9 @@ Live [demo](https://kerey.github.io/num2wordKZ/)
 ### 2. Simply use 
 
 ```javascript
-import { num2wordKZ } from '@kerey/num2wordKZ';
+import { num2word } from '@kerey/num2wordKZ';
 ...
-const word = num2wordKZ(12);
+const word = num2word(12);
 console.log(word); // он екі
 
 ```
