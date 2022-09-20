@@ -1,6 +1,8 @@
 {
   "name": "num2wordKK",
-  "version": "0.0.0-development",
+  "author": "Akzholtay Dagzhanuly",
+  "description": "Convert number to word in kazakh",
+  "version": "2.0.0",
   "keywords": [
     "typescript",
     "library",
@@ -38,7 +40,8 @@
     "test:setup": "node -r ./esbuild-hook ./scripts/testSetup",
     "spell:check": "cspell \"{README.md,CODE_OF_CONDUCT.md,CONTRIBUTING.md,.github/*.md,src/**/*.ts}\"",
     "cz": "cz",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "deploy": "npm version patch --force && npm run build && npm publish --access=public"
   },
   "devDependencies": {
     "@ryansonshine/commitizen": "^4.2.8",

@@ -1,6 +1,3 @@
-import { bar } from "./bar";
-import { foo } from "./foo";
+import num2word from "./num2word";
 
-export function foobar(a: number, b: number) {
-  return foo().repeat(a).length + bar().repeat(b).length;
-}
+export { num2word };
